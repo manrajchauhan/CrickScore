@@ -26,8 +26,6 @@ interface MatchDetail {
   umpire1:string;
   umpire2:string;
   umpire3:string;
-  team1Score:string;
-  team2Score:string;
 }
 
 interface PlayerDetail {
@@ -189,8 +187,8 @@ const MatchDetails: React.FC = () => {
     <tbody className='bg-white divide-y divide-gray-200'>
       <tr>
         <td className='px-6 py-4 whitespace-nowrap text-heading text-base tracking-tight'>Score</td>
-        <td className='px-6 py-4 whitespace-nowrap text-heading text-base tracking-tight'>{match.team1Score}</td>
-        <td className='px-6 py-4 whitespace-nowrap text-heading text-base tracking-tight'>{match.team2Score}</td>
+        <td className='px-6 py-4 whitespace-nowrap text-heading text-base tracking-tight'>{match.team1}</td>
+        <td className='px-6 py-4 whitespace-nowrap text-heading text-base tracking-tight'>{match.team2}</td>
       </tr>
     </tbody>
   </table>
